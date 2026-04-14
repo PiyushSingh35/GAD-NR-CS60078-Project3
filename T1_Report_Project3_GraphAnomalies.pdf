@@ -1,0 +1,301 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<<
+/Producer (pypdf)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 3
+/Kids [ 4 0 R 10 0 R 13 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Contents 5 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F3 9 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+5 0 obj
+<<
+/Length 6634
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 68.3622 751.5276 cm
+q
+.101961 .101961 .180392 rg
+BT 1 0 0 1 0 7 Tm /F2 15 Tf 22 TL 65.06309 0 Td (Task T1 Report \227 Project 3: Graph Anomalies) Tj T* -65.06309 0 Td ET
+Q
+Q
+q
+1 0 0 1 68.3622 723.5276 cm
+q
+BT 1 0 0 1 0 14 Tm 111.2606 0 Td 12 TL /F1 10 Tf .266667 .266667 .266667 rg (CS60078 Complex Network Theory | Spring 2025\22626) Tj  T* 18.22999 0 Td (Group: 22CS30072, 22IM30034, 23EX10026) Tj T* -129.4906 0 Td ET
+Q
+Q
+q
+1 0 0 1 68.3622 713.0236 cm
+Q
+q
+1 0 0 1 68.3622 711.0236 cm
+q
+1 w
+1 J
+.101961 .101961 .180392 RG
+n 0 0 m 458.5512 0 l S
+Q
+Q
+q
+1 0 0 1 68.3622 704.3543 cm
+Q
+q
+1 0 0 1 68.3622 665.3543 cm
+q
+BT 1 0 0 1 0 30 Tm 13 TL /F2 9 Tf .2 .2 .2 rg (Paper:) Tj /F1 9 Tf ( GAD-NR: Graph Anomaly Detection via Neighborhood Reconstruction) Tj  T* /F2 9 Tf (Authors:) Tj /F1 9 Tf ( Amit Roy, Juan Shu, Jia Li, Carl Yang, Olivier Elshocht, Jeroen Smeets, Pan Li) Tj  T* /F2 9 Tf (Venue:) Tj /F1 9 Tf ( WSDM 2024) Tj T* ET
+Q
+Q
+q
+1 0 0 1 68.3622 658.8543 cm
+q
+.5 w
+1 J
+.666667 .666667 .666667 RG
+n 0 0 m 458.5512 0 l S
+Q
+Q
+q
+1 0 0 1 68.3622 650.7677 cm
+Q
+q
+1 0 0 1 68.3622 622.7677 cm
+q
+.101961 .101961 .180392 rg
+BT 1 0 0 1 0 7 Tm /F2 11 Tf 18 TL (1. Problem Statement) Tj T* ET
+Q
+Q
+q
+1 0 0 1 68.3622 548.7677 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 60.5 Tm /F1 9.5 Tf 14 TL .228345 Tw (Detecting anomalous nodes in graphs is a fundamental task in network analysis, with real-world relevance in) Tj T* 0 Tw .32739 Tw (fraud detection, spam identification on social platforms, network intrusion detection, and financial transaction) Tj T* 0 Tw .897779 Tw (monitoring. The difficulty arises because graph data is inherently multi-modal \227 each node carries its own) Tj T* 0 Tw .466549 Tw (feature vector, and the topology of the graph encodes additional structural context. Anomalies can therefore) Tj T* 0 Tw (manifest in different ways depending on which of these modalities is affected.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 68.3622 445.7677 cm
+q
+BT 1 0 0 1 0 88.5 Tm .79036 Tw 14 TL /F1 9.5 Tf 0 0 0 rg (The paper identifies three distinct categories of graph anomalies. ) Tj /F2 9.5 Tf (Contextual anomalies) Tj /F1 9.5 Tf ( are nodes whose) Tj T* 0 Tw -0.117832 Tw (feature vectors differ markedly from their local neighbourhood \227 e.g., a fake account whose textual content is) Tj T* 0 Tw .996513 Tw (inconsistent with the accounts it is connected to. ) Tj /F2 9.5 Tf (Structural anomalies) Tj /F1 9.5 Tf ( are nodes embedded in unusually) Tj T* 0 Tw .093334 Tw (dense clique-like subgraphs, a pattern associated with coordinated fake-review rings or bot clusters on social) Tj T* 0 Tw 3.145549 Tw (media. ) Tj /F2 9.5 Tf (Joint-type anomalies) Tj /F1 9.5 Tf ( are nodes that can only be flagged by considering both features and) Tj T* 0 Tw 1.278514 Tw (connectivity simultaneously \227 for instance, a phishing email sender that connects across many disparate) Tj T* 0 Tw (communities while having atypical communication patterns.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 68.3622 398.7677 cm
+q
+BT 1 0 0 1 0 32.5 Tm 1.335074 Tw 14 TL /F1 9.5 Tf 0 0 0 rg (The central problem the paper addresses is: ) Tj /F3 9.5 Tf (can a single, unified model reliably detect all three anomaly) Tj T* 0 Tw .179043 Tw (types on real attributed graphs, without requiring labelled training data?) Tj /F1 9.5 Tf ( This is a non-trivial goal because the) Tj T* 0 Tw (three types place conflicting demands on any detection algorithm.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 68.3622 370.7677 cm
+q
+.101961 .101961 .180392 rg
+BT 1 0 0 1 0 7 Tm /F2 11 Tf 18 TL (2. Previous Approaches and Their Limitations) Tj T* ET
+Q
+Q
+q
+1 0 0 1 68.3622 338.7677 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 18.5 Tm /F1 9.5 Tf 14 TL .579845 Tw (Prior work on graph anomaly detection can be broadly bucketed into three families, each with characteristic) Tj T* 0 Tw (blind spots.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 68.3622 277.7677 cm
+q
+BT 1 0 0 1 0 46.5 Tm 2.751473 Tw 14 TL /F2 9.5 Tf 0 0 0 rg (Structure-only methods) Tj /F1 9.5 Tf ( such as SCAN and centrality-based approaches work purely with the graph) Tj T* 0 Tw 1.750406 Tw (topology. They are reasonably effective at finding structural anomalies \227 dense subgraphs stand out in) Tj T* 0 Tw 1.967629 Tw (degree distributions and clustering coefficients \227 but they are completely blind to contextual anomalies) Tj T* 0 Tw (because they never look at node features at all. False-alarm rates are also high for joint-type anomalies.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 68.3622 216.7677 cm
+q
+BT 1 0 0 1 0 46.5 Tm .087745 Tw 14 TL /F2 9.5 Tf 0 0 0 rg (Feature-only methods) Tj /F1 9.5 Tf ( like LOF, Isolation Forest, and MLPAE work in the opposite direction: they treat each) Tj T* 0 Tw -0.094136 Tw (node's feature vector in isolation and apply classical outlier detection on top of it. While these methods handle) Tj T* 0 Tw .416848 Tw (contextual anomalies reasonably well, they completely ignore graph connectivity, so structural and joint-type) Tj T* 0 Tw (anomalies go undetected.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 68.3622 71.76772 cm
+q
+BT 1 0 0 1 0 130.5 Tm 2.432471 Tw 14 TL /F2 9.5 Tf 0 0 0 rg (Graph Autoencoder \(GAE\) based methods) Tj /F1 9.5 Tf ( \227 DOMINANT, GCNAE, AnomalyDAE \227 combine GNN) Tj T* 0 Tw 1.037112 Tw (encoders with decoders that try to reconstruct the original adjacency structure. The intuition is that normal) Tj T* 0 Tw .975261 Tw (nodes will have low reconstruction error and anomalies will have high error. This works well for contextual) Tj T* 0 Tw .457335 Tw (and densely-connected structural anomalies. However, the reconstruction objective is a ) Tj /F3 9.5 Tf (proximity-driven link) Tj T* 0 Tw -0.091488 Tw (prediction) Tj /F1 9.5 Tf ( task: the decoder only checks whether edges exist between pairs of nodes. This pushes connected) Tj T* 0 Tw 1.39623 Tw (nodes together in latent space but tells the model nothing about the broader neighbourhood context of a) Tj T* 0 Tw 1.847145 Tw (node. As a result, joint-type anomalies \227 whose oddity lies precisely in the combination of connectivity) Tj T* 0 Tw 1.565312 Tw (pattern and feature distribution \227 are largely missed. There is also a non-trivial aggregation problem: to) Tj T* 0 Tw .576261 Tw (assign an anomaly score to a node from edge-level reconstruction errors, one must decide how to combine) Tj T* 0 Tw (losses across all incident edges, and there is no principled way to do this.) Tj T* ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+1 1 1 rg
+n
+100 721 400 14 re
+f*
+0.267 0.267 0.267 rg
+BT
+/F1-0 10 Tf
+12 TL
+ET
+BT
+1 0 0 1 193.4078 723.5 Tm
+(Group\0553\072 23EX10026\054 22CS30072\054 22IM30034) Tj
+T*
+ET
+Q
+
+
+endstream
+endobj
+6 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+9 0 obj
+<<
+/BaseFont /Helvetica-Oblique
+/Encoding /WinAnsiEncoding
+/Name /F3
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+10 0 obj
+<<
+/Contents 11 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font 12 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+11 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Length 3464
+>>
+stream
+Gatm=gN)%.&q0LUi+6YfXMj)rP,`s"9H;CHGWdj>X6.B$>8.B8Le0o68B_#04Uk^caeIljD,dc/U&d*^:S7'0*G4?lR%IO'f["d.Vb[eD>^!ScNc4a[mY5$'?$s8'3ls(a][1e('EhIp7NnX;e8f@Q#p$JS*SXo[1:=j3P0U:)`9p7ai%i>-42eN*bd5sXL9j+/ge,h4p-f`k/S+O*?!i%cgjX^mm_6!=pS>m&pq0QQN1H(d#<R[K(!rh<jh#Mo@)Eup7bc?W',k*n@2m@p=h>ihT3\L>]4%%k/CWUHIH39381!sX;Kg7&HF&iN,A#.ao1W2r<fJ!3J&gjHJSURW>c^t2nZ$28[4\u.rWP$Jk"MrS"5--_bB7Wj9YP#C<'Q1Rc#t%4Dn'8Nb/L-sS$ZQc?Xqb?Xk8fCXl?n4C7`b>_#!mn%o_tMRIu(+jRq]*5msAGP8.G@jH`g5!?-$2:3\J4$js<48B!"IK.&H(<\ijO*bp1Lphcj<M>bnlOj&m5<gM*3P>;pkDpT^T1QfS/AqKBF6tZ'deXG*2(b;L?*:.SED+SZ>VVXjtM/(jcG43!S[](<:Q,.FYo:2r%,Hm%DpsYNZ;:;<F'[TQOlZS"[&sfTH\l!/B%qk,B?cd:VJRQMX1bm9?ct$0ADn3=%,LZ1]&F$_W,(7W@"5e=CLicuJnuBi?9P(nZdj<I#XHffU?/OKOAq.@&;DA:00:19l!uT,sU=qL_>8p\.NOMOB9kKKu&UD[&K6-l)&Es@l3V/s5fOdr+Z9hI.LO[sIB!WF4Z5B1&A#4&6R]W5/:U?%s$#:(jX7kk:Vk"WSejlm7U"an"aN98WHc(o?]ABDW_tc*+Xf_DmK9kbJ+]jSm<4T_m2^a,a$@l98MPl?WrO%Pp^i(N`7K@;7K`FYZaac[7?#3"X'=FL[/!iBE!O"HWh$KtVmWV&UmHTbf\@RGD@8IuK9,AlM";j="lqMihIcfG#H^f6A"tk2!9?/m#e#2'<%(^SSnPAJe%qc=b`9q?W3!%IC^sRV``VD#r\t99Oq[5&XM[hC1B)6Hj<\!g8Rm4oj!?3Mn('LTkoRONSQE&2#L"(jQ8G^=h`*"]@qD&O!XEPYCe#c>^,)i[iCl$4Jpo:+$R]DU;.jZmI$.1W?MGOQFC]79l#2d?[i[lDh"SQ&9)YcT8T=66eop..koCYc?S[']iJ3ZeDrmJ72)Yl*1c_@U#r/KIb*k(E9')KuQ>]4m7%!=LtYF<=9Z;m5>I;d/llnM\LVJ:3_k-P/\(#iHh(/+P`1jYo\YX+Z_J+!i42Q#n`n:3VfPS-VfqOG%okHmnVaMbK4VQ'Y^)GTN7[bp5_I'2RV@2QHkF^J[p0__p0"pp^bA5c=Urmjp)TOmXa4/>-AXs'*G/_1Z5<[-%)_+Wcko)(C7dNq@_nk#&GLOPZ:;6M:>2h]RtBG;N<Z!!.r-qBOnhVp7iK&CgC2V9)V^V-8)c$*Z6cG#*WR==lm3[2]tfV<7VN14B,<ui/;nn^Vm_6hu)'KEm<ajZOm122b7e3Wb)1K7+`AdDeKJ8SlU"V[ei4*WbMfQ:P+[YK1Gm!<?;"n;P9D=k="!o6g&K,!rScQ-Z(0stTsQ2M((U;,M,%ZjiE*!SIHllFL%P^4\^'^.9bjpJFPN7Jg3^slF7Wd6srg\7qQDbn;6;L-oL]Of,lfR!CZSq<I\E?qP8c*>A9?#du.-@mNoGBW%k!eYA_rINf&pt^++s("Q%0(\_M:[C6VR4JQ6hH6ZRUL,X'Fh.EsQ`Jd9U\;RuU*OI-Ms5Yi\*X8S1mOcP%>r`^XJW.e4,kXTQjH(`7hYpC7"fGU/P)%\O/eYb3<h6e_H+>-O!t?1<(H><KiU-ggX'`J%oZ;:VHbHKPg+M1,"K<i9h\_W/5t;Tnj>NZieD1of#V38),VgSMpG'T25X5q[-bsjeXWYmUQh-XMU83='?eiC1A)S_m^^`UesV\T*JEUuZJRVM`j8BNkY@fB"6`I6+Rl_l^HO<R0<\.D0bmTO6;T-K3p4JpQN_XK>#Kgq:UI35jpN@\o"&/hJ7amFp+0GB,os6(4oC!j"rPi0/fj5fSZ"L6f;;^jQ=`Zr)&9jV(*<rm@DC^G?;rfb/A3K14N*1#L8!?g*mS&u>r=GjplhYK>O!;TI%O0gg7[igC;YAGVut<KXisq&PFJjk:'h#)"SBh8.oFo8NGt,_S1&CUY-g0lQ]4I/]1F(Jje0%"ko>;@*^)B'oMi:0\SZ>J`-[,Zq$^]=BbUa/WHNU6dn?:k[%+^Jkh:rY1'D4Q/J6,oE?<MF0Zi'4U+P-oioF@@p8cuVO:e=&>MlkB:%Q$2e2W$@T=\%gD\37on<JZjWH:GMe!e;4i"KFi4WP8XFDI#B?dob'D$R2(bT'Pq.76gpAEb!Io"(TTEXD_!!;b3r:CC=A"X^HWol[T/L-[dMT?Vh2gdk9P[>r<gp?D:im/Ei^YKsE+Q0i0HKB7^c5-/m$ieCH/</R:-\SY^nEa)pAO:0U1C!e^"<XHA/\@h+7.FRR60#i.$/doPTMtI$3.M&In+FW"&J6J38-,7cf:KG>sBkb\5;E_YnKs(H*]-$\tp9>k7Zhld\4PI7LoB@3m&TZV[YhTd`g&gYV\3+OIXI>%#1!2,i8d/M)TKu-7er;e1YElbg[>*qF1IfN`Ei&u)lF%99MEN(ZBF6.nM[U7_8TdF\T&Y"]!P.>/WR<u*bmElVCV;F(p#+7B?'=ruSf1Kt)u@+^Ci"+D?0A,T`8`$_>nL?UOjbUV%UDB:IfB<>,7[ac)]\-oR\*bqneG>c"&q49(U;U;`rtQ;;.3d_,1?uP$mf]j(r-0QpD6jCg(=[Oj58[ga?;E&Tf0:p6%e\*l[%OCFn,/_&bC2MQc0uth!WJq,?1CumVXRf*S*^r*Q]UiAVV=M(rY[a6D##_2f9p]1(q<q>P-C]Y2`>%kO!sb#+^nf'6k9AI#u*j>U*/B_):1bK',X)iZYW%'0>LZ0Ua[*=UNMWD:U)A)9'[M_%Oq8U+kHI](="'V[XF;@#mV+ETVFX:K]6Wr5]m1mEC")Rh1UBa5#&!$i?5GALQ1$PJGq2!a.alq]R<\[FDHIr/TKCIrV`XB.PeDa)g,JVCVdJ`.#34p?cObKN"dj?-B*KF<j%]^"<O#Hi?PM^7MQ"&6f_IH'!/&q1gCL\D<G"lndI%^Cj+h%l4XBN]g0Is,7uldU>8IST)^]5/_;V0-3k>4IBQlE*uCBf*`VB$/CZchCDV4HTi%Qim/:Y6Be%/Mu.sEGL?JJ'aB4F8:'-GZ\Gg\P3t`Fm6dTa[%]>]%u8eoa60=Ao5FR,H=;O"04Mu:5@7c"525bPV;0NWSdP21%+'?Js'cOb9n"A;^IB7_]uO&9JF#'1^f*IJ$o8g;;a18V*t@/-*>jqhBeVXXRQ4\F=i--khtMa0=:7hi45)n-__+J-MBh!e%hHR^k<tV3cDBLYTc=![I+ZF<!*3j+*<~>
+endstream
+endobj
+12 0 obj
+<<
+/F1 6 0 R
+/F2 8 0 R
+/F3 9 0 R
+>>
+endobj
+13 0 obj
+<<
+/Contents 14 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font 12 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+14 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Length 3892
+>>
+stream
+Gat=-gQL@#&Ui84i$FXgZ9o;<;lVs]/lnLp;FTH,?a_G<+Ybd;87Kfd?=*Qs3=V&m3O@5fQHENrBEI"f0BbUCR>\gbs$*P$HZRBEqjoV3Z.g;ZJJ59B+5-PG(Vd]BK4GTUY+PPFMuD97]f<lQ=E`-6NK\m`rbV9]C4,27/FYu]VbtSp4CO4[]>%cMqE'Mkm5#rh4r,>pAr.19e\"1&]H/p<R2=4b`NJ&GosK4iDSNF1^R[olW>"b\8g[tq*Ur-8@3.lJkAE*_qq"[`4tl7gaA6&j'))*XAE#VS(BlTd-[K+KO1<(p0:@a0IsG?YAC2Ok^2?o`@XmaS@0$0p=mfXP^;"8ELIjcg$-1G9R`$!BYgP&+HAUt_OWVehE)rX;p5brN'?n_!_#,#JqsqU\kYKDtIt%Cd!b)#"A'AML$-&/,N#+D/ke2DKbO4r7CL9HgH$P)1C]R=D_<)0nB-6JaglEF6o(D;CmqFLN*:2mWea^I.H]dX48K?r*qd>b=*]jD5KU2#CYl#UAG=q6NJQFrERI*(B*9tasG2;2%*LZB^5OA$?ak?2gJ7]dGQGf:@NYc\5nMY#][piQ6`a?!Cql1:R'5K\W'l@#_/Q4a^*@,EY8%+\*G/3rUQA\MFZ>6!c.Q5Hj&L>\l)5_I2(:nNMKH':la$.+`5W'g(8c@/;5F*Y[XOt7sQV=VWeQF+YkU>atNXCu-YF*o0]C3H'ql@3+&]78RknP^PluNk2fkdsGCf`KpAbVj*lbc#_/4u$F=KQUXA/j2odGU;hBLKZ_SXmhh%OC\mX%".%ZL28K[SQZ.FjKe@Gu6k-*$S"`(&O!ED/`J2Z?r!^WaWM/<NPCf19JIGf1a]);'@S2aC%)tn"ECF(RaJt]?gP3/OW]q>(uAe3i6Y+1hA@:_LPejUW-`O5\f24j+5EhO.lZ*%n1\m";CO8&ND&&qaP=*",Au)L\cqVT^A13lhX)8Mpo3Ma$CW2drA21b(>WVLiAOpTK!_?f:q-.(uBpcYa<.B[@o\4A@0A4_3k:umM+FKAbi\6-FH\n.uRb]ftKX3Sd0hEO"Wt.23<l)&&9QXi13bV'LHp8?X'skH9Lm?gn94k=K5?T!I83Eh44o?<+"h3!!qC+j[K8J.2X6u)`.C?&=N$B;PeFUT$o!+(8!IJPpjcaTR^CT7?$)/)>*o:A=1GZ`*FnJCE4d)=DI&FBf'LjWN,6!MB^bNhBUh0]9bn7,9eU0X'@R&K;I5CZ36hpSUc*i5r+Ks0X]A$K'7JhV0[Z4FFW)Z]KYjaPiC\[[1\bO_,,6<c3Jn6lFhXDD+,o=9]hfa)/bBs2@AQG1;V`)b];0E!X7p!c$)T\bGTD@L[o"S3E)DWO&X,gKn<AN\;7snh%u5s799O`"3kM^7KbC/S_A7]W(heDieqQ/mYTc#N_Ih\h0+3A!'@OAFJVf'rk.*/(Uk>rdna3tWHVD3@oMbX'N8<('.TVUTu0(;[P'_+?>i[obFZl&AM)]J(A#7Z3\uSh94gHAP\kZtFZjV)9YNPGKt^jR]dS4@DjB[X+sTVA&41eQ4[kihr;>e2bPDE3rpK(6^MiRI3p`_Up_UJo476)I(eWNmiGfK=JJYrR'I"J[YF,bEV_<hLgnTt<n<8^/:1&fr/AekZW/#PFpXqfJ##OckL/N:p#838Pi?D)05d/i4F\?=o\9YRZpmLe,<BR]?*YC2`-Q%CA/:\%[&YD+%m]K/ZD0,6^7qB*p,hHjWcLl6lTBh[d8(P4'7k/_<7eQY2l8s1PGqk0s_6k/ETL8EOWjScP15@'P[#cS%<E!U%C`un)YeLdZgdR8D`#]<AjS&g1okl3^'QaI?6+ftaa+_&.LHP1U@]g#i5Huk&ZqL;Um;r.OOVd&pF&Fqk>eMf(q=[=%?ThqFh]B)_AE^s]P2/Fc.t`HnT_IBl,]0$AF4h[YikXT<ln>ZsWYJra^e'Knh?nauH!YSCK*JdH$/0)D4Y+G5Z\D,Z7QfH&)fqesH4Ft1P!,AHrm9^E\YFVGIer$`c,\Qr=>:ik?8TdQ,e5hF"h7e4>S`OD$;RP%M&3(R/-auh=mVW2I&:rrY>0"R#]F-XRJ(c)AT;7D-HRMPY>0cpL9*])`nZ"2DVe`Nb^P]L:2g4h.uRY8S+]@nXDA`V\\^[FAHP?j"j!c]j>l'#a<ho]JZh@O)2,Jk52NraJ<gq1=#IC!=]km[$F1F!.ne+/"gk?^crp`FMq59(A[Ef=\<AOV035iML+p+!V(<X,M:^s^.7ko7[32b83a0+Pb*8WqU!^hu)b$OP.%V&neC@j?pW'5"<&50I?'Mo.cGdM)^31m7RDe^Oi+AQ4i+ZH3I6:`Ldt6,T$`C(d?*LD*l8l2>7$1Nd5$/Q0O3C1*ZYU_\AU)pXD'/,MLCZ?_)80i.VW@psS*q<Yb!&M_">8M@Tg<==(m`ceT)a)DlhRTg%jiR6rqgCO*j4ur0I_.^P[l,ta*Ye^f^>':lS_[TD09'@IX'GT?9d2ElAkRt`/$O'83DMFZ"g^IAPPHE%Ul<*fE.(+LBgC1.&6Tpf4/UOT^t>]qa65?0Yl"j-A'5Z9j!rkHuBMM+.QRopbn.2TBe[ecq%]&!opPR<46>?U+ST-FhZO4lP\i:*V!#`hTW9:L2Oh`BSL4DfG.OrMP_ZAXXRoh4roelcQ0M0lte^3GinI$_N(Y3-u&T8[P2ChBuJJK&W+JZ'Y3F+c#f.nD23J^0o[Sq#X_PDZEj8:*.^8nGJ.r<$9jAQ1a<>9/R_8fEc&oVni!@YU*aD,OGBs&(!RCRENa\9bjo5P_qB1Q?u&L[fl9WJ>g!Fc5^j!><l[P+8HkK_B:1?+)B;bC(uqZl`.Y9R_2_Ae^H?(S@J]/^"?"to#N+<QbCMp(6kg<JB@sh%TgpLZUtIh-;Uo=WaAO42B\^j#dh!hu+N[*Af84O`=@PV7^"`\)"Zg>H]I<@!JS;u1L6*W3i.5X3*,CuW&K."`"/cW%39mGPQmPnMQT+2#8NMfY`47G,3$m7&i1$Jr)X]L..CMA6EB*a?2^=_NkMVqDZZKN\8#W(!HGX&r5+-4)a@Fs.)&oqe;o&F;8Fpm.C8`eC"pN.)G8<67),+OI-m:Jh9%_'irJjG-hCMQj,l>po3e$9'naI"E)HhkoW^lIeEH42X4Nu\C$7_buK0Prh12Wq7&5fcp^O4mc\9\*HcgC;%&4uMrG$8[KV;FU''I,S>/YI+c5E#h*pc#!jBE`rKNJN<q2VUXYC`E'e$6c%"lbYu[J\%:51OM%T[["W$\43Ff/NmZY<\jI!h,S@G3:pj:9]4ip]PZ>eJ'-6NqDH.QT7+Bh9`Z@:&*a[KdLN/AYl*r32`\1Xg$@*9`Hjo1?hPsndl"<U_i3j=RceQ$bh_QT]6,=JS9)DaEj9"T.>_76i5_^nZf4MlC9,M6,d)_iWTsG:aQB!d/W4BAPluu!+mXp]=h<;L4:'@]g\"0O!H-_1;%ab'r=MjdDLG.RmQe<?-6o>iWbbQ*--hgVDoX.$ME;'0(6p4@eL<DW2eU*\DU0H`EAFbs6O"Trb)%*%N)<:hgjP;`4jYI^#t%&;Lf3_E<(%ubP*i\FdIbAulOlJ8&0ZJ!7cL>&60&,_?V;PqrP(sM`5Vcn[a9FkD32$068^C;`^Xfl'G\K#aie6#<FeX)9fZ.g-6*c<-,(IMQ-u6:h)n5lGkcDP53(3B*$1!-GgAiAO`rD)L3p@+/P6'JFt8-Q.-YqDkbP(niqn1TTeXhNV>^<N;OFB0B+<D&hZIUmj+?8*B;6YD'5/bb3k8*%UUV^1#M]sp2ehJdgit,K4&+VA%*m4N#5a]d+FgC[<FjT9*=,2iFJTfn0Y<jUWTQZ@kQYh)ZCVecFgT:7AfdD#^+gGWh_nuE$`VC=HM-msd89V3M`X]VcX-MkAbl#T~>
+endstream
+endobj
+xref
+0 15
+0000000000 65535 f 
+0000000015 00000 n 
+0000000054 00000 n 
+0000000127 00000 n 
+0000000176 00000 n 
+0000000429 00000 n 
+0000007115 00000 n 
+0000007222 00000 n 
+0000007329 00000 n 
+0000007441 00000 n 
+0000007556 00000 n 
+0000007758 00000 n 
+0000011315 00000 n 
+0000011367 00000 n 
+0000011569 00000 n 
+trailer
+<<
+/Size 15
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+15554
+%%EOF
