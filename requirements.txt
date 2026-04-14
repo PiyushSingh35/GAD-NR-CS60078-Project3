@@ -1,0 +1,10 @@
+pygod==0.3.1
+networkx
+matplotlib
+scipy
+seaborn
+dgl
+sklearn
+bioinfokit
+requests
+tqdm
