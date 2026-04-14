@@ -85,3 +85,22 @@ The script prints per-epoch AUC scores for:
 - `matplotlib`, `seaborn` — visualization
 - `networkx` — graph utilities
 - `tqdm` — progress bars
+
+---
+
+## Endterm: GAD-NR++ (Enhanced GAD-NR)
+
+### Running GAD-NR++
+```bash
+python gadnr_plus.py --dataset disney --epochs 50 --num_runs 3
+python gadnr_plus.py --dataset books --epochs 50 --num_runs 1
+python gadnr_plus.py --dataset inj_cora --epochs 100 --num_runs 3
+```
+
+### Improvements over GAD-NR
+1. **Multi-head GAT encoder** (4 heads, 2 layers, residual + LayerNorm)
+2. **GMM neighbourhood decoder** (K=2 components, NLL loss)
+3. **Learnable anomaly score fusion** (MLP replaces heuristic weights)
+
+### Additional Libraries
+- `torch_geometric.nn.GATConv` — Graph Attention Network layer
